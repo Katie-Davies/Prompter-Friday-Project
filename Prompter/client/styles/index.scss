@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+html, 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(46, 124, 124);
+}
+
+.app{
+  margin: 0 auto;
+  
+  max-width: 1450px; 
+}
+
+//headings
+
+.heading-main{
+  padding: 25px;
+  // background-color:#e5dbff ;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heading-secondary{
+  text-align: center;
+  color: #68efc6
+}
+
+// Prompt List
+
+.prompt-list{
+  display: flex;
+  flex-direction:column;
+  gap: 5px;
+ align-items: center;
+}
+.list-element{
+  list-style: none;
+  background-color: #c3fae8;
+  border-radius: 9px;
+  display: inline-block;
+  padding: 3px;
+  width: 600px;
+  margin-top: 2%;
+  text-align: center;
+
+}
+
+.list-element > a{
+  text-decoration: none;
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: #7950f2
+
+}
+
+
+.card {
+  border-style: solid;
+  background-color: white;
+  box-shadow: -9px 11px 12px -11px rgba(0,0,0,0.75) ;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+
+img {
+  width: 500px;
+  
+}
+
+p{
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background-color: black;
+  color: white;
+// margin-left: 2em;
+}
+
+input {
+  margin:1em;
+}
+
+.comments{
+  background-color: #c3fae8;
+  box-shadow: -9px 11px 12px -11px rgba(0,0,0,0.75);
+  padding: 20px;
+  text-align: center;
+}
