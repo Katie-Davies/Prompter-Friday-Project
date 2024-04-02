@@ -35,3 +35,10 @@ Here is a basic overview of our userstory and code.
 
 
 For a more indepth reflection click here for my blog. 
+
+
+npm install # to install dependencies
+npm run dev # to start the dev server
+```
+
+You can find the server running on [http://localhost:3000](http://localhost:3000) and the client running on [http://localhost:5173](http://localhost:5173).
