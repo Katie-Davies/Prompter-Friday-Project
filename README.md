@@ -10,7 +10,7 @@ Here is a basic overview of our userstory and code.
 * To view all prompts
 * To click on a prompt and see all comments based on the prompt
 * Login and comment their thoughts on prompt
-* Delete their comment
+* Delete their own comment
 
   ### Stretch
   * only update and delete comments they have made

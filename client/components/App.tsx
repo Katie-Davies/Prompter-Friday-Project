@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom'
 import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 import addUser from '../hooks/addUser'
 import { User } from '../../models/prompt'
+import useGetUser from '../hooks/getUser'
 
 function App() {
   const { user, logout, loginWithRedirect, isAuthenticated } = useAuth0()
@@ -15,12 +16,16 @@ function App() {
     await loginWithRedirect()
   }
 
+  const { data } = useGetUser(user?.sub)
+  console.log(data)
   if (isAuthenticated) {
-    const data: User = {
-      id: user?.sub,
-      nickname: user?.nickname,
+    if (!data) {
+      const newUser: User = {
+        id: user?.sub,
+        nickname: user?.nickname,
+      }
+      addUser(newUser)
     }
-    addUser(data)
   }
 
   return (
