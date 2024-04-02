@@ -2,6 +2,8 @@ import useComments from '../hooks/use-comments'
 import { useAuth0 } from '@auth0/auth0-react'
 import useDeleteComment from '../hooks/useDeleteComment'
 import { Comment } from '../../models/prompt'
+import User from './User'
+import useGetUser from '../hooks/getUser'
 
 interface Props {
   id: number
@@ -37,7 +39,7 @@ function Comments({ id }: Props) {
           <ul>
             {data.map((comment) => (
               <li key={comment.id} className="card">
-                <h2>{user?.nickname} </h2>
+                <User userId={comment.user_id} />
                 <p>{comment.comment}</p>
                 <button
                   key={comment.id}

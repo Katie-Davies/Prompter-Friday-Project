@@ -11,20 +11,20 @@ export async function seed(knex) {
       comment:
         'Creamy vegetable chicken soup for the nutrional value, fibre and protein.',
       prompt_id: 1,
-      user_id: 'a74b',
+      user_id: '1',
     },
     {
       id: 2,
       comment: 'Tiny horses for the cuteness factor. Plus, less terrifying.',
       prompt_id: 2,
-      user_id: 'a74b',
+      user_id: '2',
     },
     {
       id: 3,
       comment:
         'The shortest war in history lasted only 38 minutes. It occurred between the countries of Britain and Zanzibar on August 27, 1896. Zanzibar surrendered after the British bombarded their palace, resulting in minimal casualties and a very brief conflict!',
       prompt_id: 3,
-      user_id: 'a74b',
+      user_id: '3',
     },
   ])
 }

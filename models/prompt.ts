@@ -13,3 +13,8 @@ export interface CommentData {
 export interface Comment extends CommentData {
   id: number
 }
+
+export interface User {
+  id: string | undefined
+  nickname: string | undefined
+}

@@ -3,6 +3,7 @@ import * as Path from 'node:path'
 
 import prompts from './routes/prompt.ts'
 import comments from './routes/comments.ts'
+import users from './routes/users.ts'
 
 const server = express()
 
@@ -10,6 +11,7 @@ server.use(express.json())
 
 server.use('/api/v1/prompts', prompts)
 server.use('/api/v1/comments', comments)
+server.use('/api/v1/users', users)
 
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static(Path.resolve('public')))

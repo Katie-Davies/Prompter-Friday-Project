@@ -28,3 +28,12 @@ export async function addCommentsToPrompt(data: any) {
 export async function deleteComment(id: number) {
   await db('comments').where({ id }).del()
 }
+
+export async function addUser(data: any) {
+  await db('users').insert(data)
+}
+
+export async function getCommentUser(id: string) {
+  const user = await db('users').select().where({ id }).first()
+  return user
+}

@@ -7,7 +7,8 @@ export function up(knex) {
     table.integer('id').primary()
     table.string('comment')
     table.integer('prompt_id').references('prompts.id').onDelete('CASCADE')
-    table.string('user_id')
+
+    table.string('user_id').references('users.id')
   })
 }
 
