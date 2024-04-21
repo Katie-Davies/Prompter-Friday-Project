@@ -34,7 +34,7 @@ Here is a basic overview of our userstory and code.
 
 
 
-For a more indepth reflection click here for my blog. 
+For a more indepth reflection click [here](https://medium.com/@millerkatie1990/prompter-icebreaker-questions-bbfcb237105c) for my blog. 
 
 
 npm install # to install dependencies
