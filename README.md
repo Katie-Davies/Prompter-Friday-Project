@@ -35,8 +35,8 @@ Here is a basic overview of our userstory and code.
 
 
 For a more indepth reflection click [here](https://medium.com/@millerkatie1990/prompter-icebreaker-questions-bbfcb237105c) for my blog. 
-
-
+```
+git clone git@github.com:Katie-Davies/Prompter-Friday-Project.git
 npm install # to install dependencies
 npm run dev # to start the dev server
 ```
