@@ -38,6 +38,8 @@ For a more indepth reflection click [here](https://medium.com/@millerkatie1990/p
 ```
 git clone git@github.com:Katie-Davies/Prompter-Friday-Project.git
 npm install # to install dependencies
+npm run knex migrate:latest
+npm run knex seed:run # to create database
 npm run dev # to start the dev server
 ```
 
